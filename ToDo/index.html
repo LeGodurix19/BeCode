@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Seymour+One&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Seymour+One&display=swap'); </style>
+    <title>Didlydoo</title>
+</head>
+<body>
+        <header>
+            <h1>
+                DIDLYDOO
+            </h1>
+            <div class="nightmode"></div>
+            <form id="createEvent" name="createEvent" class="createEvent">
+                <div class="test">
+                    <label for="textEvent">Titre de l'événement</label>
+                    <input class="inputTXT" id="tEvent" type="text" required maxlength="30">
+                </div>
+
+                <div class="test">
+                    <label for="textDescrp">Description</label>
+                    <input class="inputTXT" id="tDescrp" type="text" required maxlength="256">
+                </div>
+
+                <div class="test">
+                    <label for="textAutor">Auteur</label>
+                    <input class="inputTXT" id="tAutor" type="text" required maxlength="25">
+                </div>
+
+                <div class="test">
+                    <label for="textDate">Date</label>
+                    <input class="date" id="tDate" type="date">
+                </div>
+            </form>
+            <button class="buttonForm" aria-label="buttonForm" id="formButton">Ajouter</button>
+        </header>
+        <main id="main"></main>
+    <script src="./scripts/index.js" type="module" ></script>
+    <script src="./scripts/nightmode.js"></script>
+</body>
+</html>

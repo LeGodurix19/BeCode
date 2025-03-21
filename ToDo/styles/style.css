@@ -1,0 +1,357 @@
+body {
+  padding: 0;
+  font-family: Trebuchet MS;
+  font-style: italic;
+  color: #5784BA;
+  position: relative;
+  font-size: 1rem;
+}
+body header {
+  margin: 0;
+  opacity: 0.9;
+  background-color: white;
+  z-index: 1;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 32vh;
+  text-align: center;
+}
+@media screen and (min-width: 769px) {
+  body header {
+    height: 22vh;
+  }
+}
+body header h1 {
+  font-family: "Seymour One", sans-serif;
+}
+body header .buttonForm {
+  background-color: #5784BA;
+  border-radius: 15px;
+  border: 2px solid #5784BA;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Trebuchet MS;
+  font-size: 2vh;
+  font-weight: bold;
+  padding: 1vh 1.3vh;
+  text-decoration: none;
+  margin-top: 3.5vw;
+}
+@media screen and (min-width: 769px) {
+  body header .buttonForm {
+    margin-top: 0.5vh;
+    width: 20vh;
+  }
+}
+body header .buttonForm:hover {
+  background-color: #5784BA;
+}
+body header .buttonForm:active {
+  position: relative;
+  top: 1px;
+}
+body header .createEvent {
+  margin-top: 2vh;
+  height: 16vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+body header .createEvent .test {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  white-space: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 769px) {
+  body header .createEvent {
+    height: 6vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+  body header .createEvent .test {
+    width: 20vw;
+  }
+}
+body header .createEvent .inputTXT, body header .createEvent .date {
+  width: 80vw;
+  height: 2vh;
+  border-radius: 5px;
+  background-color: #AAD2F5;
+  border: 0;
+}
+@media screen and (min-width: 769px) {
+  body header .createEvent .inputTXT, body header .createEvent .date {
+    width: 18vw;
+  }
+}
+body main {
+  max-width: 1000px;
+  min-width: 345px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32vh;
+}
+@media screen and (min-width: 769px) {
+  body main {
+    margin-top: 22vh;
+  }
+}
+body main .event {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  color: black;
+  border-radius: 5px/5px;
+  border: 3px solid #F4CFDF;
+  width: 100%;
+  background-color: #F4CFDF;
+}
+body main .event h2 {
+  font-weight: bold;
+  font-style: normal;
+  margin: 1vh 0 0 0;
+}
+body main .event section {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+}
+body main .event .author {
+  min-height: 1vh;
+  width: 99%;
+  margin: 0 0 0.5vh 0;
+}
+body main .event .description {
+  background-color: #FFFFFF;
+  min-height: 5vh;
+  width: 99%;
+  height: 30%;
+}
+body main .event table {
+  width: 100%;
+  text-align: center;
+}
+body main .event table .inputTXT {
+  border: 0;
+  width: 90%;
+}
+body main .event .ok {
+  background-color: #B5E48C;
+}
+body main .event .no {
+  background-color: #FCA8A8;
+}
+body main .event .name {
+  background-color: #FFFFFF;
+  width: 10%;
+}
+body main .event .addGuy {
+  width: 100%;
+}
+body main .event .buttonDate, body main .event .buttonLeftMiddle, body main .event .buttonDel {
+  margin-bottom: 1vh;
+  width: 40%;
+  opacity: 0.7;
+  border-radius: 15px;
+  display: inline-block;
+  cursor: pointer;
+  color: #3A587C;
+  font-family: Trebuchet MS;
+  padding: 1% 1.3%;
+  font-weight: bold;
+  text-decoration: none;
+}
+@media screen and (min-width: 769px) {
+  body main .event .buttonDate, body main .event .buttonLeftMiddle, body main .event .buttonDel {
+    padding: 0.5vh 0.75vh;
+  }
+}
+body main .event .buttonDate:hover, body main .event .buttonLeftMiddle:hover, body main .event .buttonDel:hover {
+  opacity: 1;
+}
+body main .event .buttonDate:active, body main .event .buttonLeftMiddle:active, body main .event .buttonDel:active {
+  position: relative;
+  top: 1px;
+}
+body main .event .buttonDate {
+  margin-top: 2vw;
+  width: 40vw;
+  background-color: #F4CFDF;
+  border: 5px solid #FFFFFF;
+}
+body main .event .buttonLeftMiddle, body main .event .buttonDel {
+  margin: 3vw 0 1vw 1vw;
+}
+body main .event .buttonLeftMiddle {
+  background-color: #FFFFFF;
+  border: 5px solid #FFFFFF;
+}
+body main .event .buttonDel {
+  background-color: #FCA8A8;
+  border: 5px solid #FCA8A8;
+}
+body .scroll__card {
+  overflow: auto;
+  width: 80%;
+}
+
+.nightmode {
+  width: 6vw;
+  height: 3vw;
+  border-radius: 5vw;
+  color: #5784BA;
+  border: #5784BA solid 0.2vw;
+  position: absolute;
+  top: 2vw;
+  right: 2vw;
+  display: flex;
+}
+@media screen and (min-width: 769px) {
+  .nightmode {
+    width: 3vw;
+    height: 1.5vw;
+  }
+}
+.nightmode::before {
+  content: "";
+  position: absolute;
+  width: 2.8vw;
+  background-color: #5784BA;
+  height: 2.8vw;
+  border-radius: 5vw;
+  transform: translateY(0.06vw);
+}
+@media screen and (min-width: 769px) {
+  .nightmode::before {
+    width: 1.4vw;
+    height: 1.4vw;
+  }
+}
+
+.night h1 {
+  color: #F37500;
+}
+.night h2 {
+  background-color: transparent;
+}
+.night .author {
+  background-color: #343434;
+}
+.night header #formButton {
+  background-color: #F37500;
+  color: #ffffff;
+  border: none;
+}
+.night header .createEvent .date {
+  background-color: #434343;
+}
+.night header #tAutor {
+  background-color: #434343;
+}
+.night header #tDescrp {
+  background-color: #434343;
+}
+.night header #tEvent {
+  background-color: #434343;
+}
+.night .event {
+  background: rgba(67, 67, 67, 0.5);
+  border: none;
+}
+.night .event section {
+  background-color: #343434;
+}
+.night .event .description {
+  background-color: #242424;
+}
+.night .event .buttonLeftMiddle {
+  background-color: #444343;
+  border: none;
+  color: white;
+}
+.night .event .buttonDel {
+  border: #F37500 solid 0.2vw;
+  color: #F37500;
+  background-color: transparent;
+}
+.night .event .buttonDate {
+  border: none;
+  color: white;
+  background-color: #F37500;
+}
+.night .event .name {
+  background-color: #444343;
+}
+.night .event table {
+  background-color: #343434;
+}
+.night .event table .inputTXT {
+  background-color: #444343;
+}
+.night .event .no {
+  background-image: url("https://www.clker.com/cliparts/s/d/p/v/b/K/x-mark-white-md.png");
+  background-repeat: no-repeat;
+  background-size: 4vw;
+  background-position: center;
+  background-color: #434343;
+}
+@media screen and (min-width: 769px) {
+  .night .event .no {
+    background-size: 1vw;
+  }
+}
+.night .event .ok {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/1200px-White_check.svg.png");
+  background-repeat: no-repeat;
+  background-size: 4vw;
+  background-position: center;
+  background-color: #434343;
+}
+@media screen and (min-width: 769px) {
+  .night .event .ok {
+    background-size: 1vw;
+  }
+}
+.night .buttonForm {
+  background: #F37500;
+  background-color: #F37500;
+  border: #F37500;
+}
+.night .nightmode {
+  border: #F37500 solid;
+}
+.night .nightmode::before {
+  transform: translateX(3vw) translateY(0.1vw);
+  background-color: #F37500;
+}
+@media screen and (min-width: 769px) {
+  .night .nightmode::before {
+    transform: translateX(1.5vw) translateY(0.05vw);
+  }
+}
+.night * {
+  color: #A7A7A7;
+  background-color: #242424;
+  opacity: 1;
+}
+.night td {
+  background-color: #343434;
+}/*# sourceMappingURL=style.css.map */

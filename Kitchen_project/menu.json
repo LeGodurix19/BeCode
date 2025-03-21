@@ -1,0 +1,53 @@
+{
+    "menu":
+    [
+        {
+            "name":"Petite frite",
+            "category":["frite"],
+            "price":"50",
+            "img":"./imgs/small_frites.png"
+        },
+        {
+            "name":"Grande frite",
+            "category":["frite"],
+            "price":"150",
+            "img":"./imgs/big_frites.png"
+        },
+        {
+            "name":"Burger Miam",
+            "category":["burger", "not_vegan"],
+            "price":"300",
+            "img":"./imgs/miam.png"
+        },
+        {
+            "name":"Burger Viam",
+            "category":["burger", "vegan"],
+            "price":"300",
+            "img":"./imgs/viam.png"
+        },
+        {
+            "name":"Crousti Croc",
+            "category":["Brochette", "not_vegan"],
+            "price":"200",
+            "img":"./imgs/croc.png"
+        },
+        {
+            "name":"Crousti Vroc",
+            "category":["Brochette", "vegan"],
+            "price":"200",
+            "img":"./imgs/vroc.png"
+        },
+        {
+            "name":"Coca-cola",
+            "category":["Boisson"],
+            "price":"1500",
+            "img":"./imgs/coca.png"
+        },
+        {
+            "name":"Coca-cola Zero",
+            "category":["Boisson"],
+            "price":"1500",
+            "img":"./imgs/coca_zero.png"
+        }
+	]
+}
